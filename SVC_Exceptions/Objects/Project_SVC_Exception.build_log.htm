@@ -1,0 +1,139 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Amey Juvatkar, XYZ, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.15
+Assembler:       Armasm.exe V6.15
+Linker/Locator:  ArmLink.exe V6.15
+Library Manager: ArmAr.exe V6.15
+Hex Converter:   FromElf.exe V6.15
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Amey\Documents\RTOS\SVC_Exceptions\Project_SVC_Exception.uvprojx
+Project File Date:  01/11/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.15', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'STM32F446RE'
+main.c(3): error: expected parameter declarator
+int __svc(0x00) svc_services_add(int x, int y);
+          ^
+main.c(3): error: expected ')'
+main.c(3): note: to match this '('
+int __svc(0x00) svc_services_add(int x, int y);
+         ^
+main.c(3): error: expected function body after function declarator
+int __svc(0x00) svc_services_add(int x, int y);
+                ^
+main.c(4): error: expected parameter declarator
+int __svc(0x01) svc_services_sub(int x, int y);
+          ^
+main.c(4): error: expected ')'
+main.c(4): note: to match this '('
+int __svc(0x01) svc_services_sub(int x, int y);
+         ^
+main.c(4): error: expected function body after function declarator
+int __svc(0x01) svc_services_sub(int x, int y);
+                ^
+main.c(5): error: expected parameter declarator
+int __svc(0x02) svc_services_mul(int x, int y);
+          ^
+main.c(5): error: expected ')'
+main.c(5): note: to match this '('
+int __svc(0x02) svc_services_mul(int x, int y);
+         ^
+main.c(5): error: expected function body after function declarator
+int __svc(0x02) svc_services_mul(int x, int y);
+                ^
+main.c(6): error: expected parameter declarator
+int __svc(0x03) svc_services_div(int x, int y);
+          ^
+main.c(6): error: expected ')'
+main.c(6): note: to match this '('
+int __svc(0x03) svc_services_div(int x, int y);
+         ^
+main.c(6): error: expected function body after function declarator
+int __svc(0x03) svc_services_div(int x, int y);
+                ^
+main.c(14): warning: implicit declaration of function 'svc_services_add' is invalid in C99 [-Wimplicit-function-declaration]
+        z= svc_services_add(x,y);
+           ^
+main.c(18): warning: implicit declaration of function 'svc_services_sub' is invalid in C99 [-Wimplicit-function-declaration]
+        z = svc_services_sub(x,y);
+            ^
+main.c(21): warning: implicit declaration of function 'svc_services_mul' is invalid in C99 [-Wimplicit-function-declaration]
+        z = svc_services_mul(x , y);
+            ^
+main.c(24): warning: implicit declaration of function 'svc_services_div' is invalid in C99 [-Wimplicit-function-declaration]
+        z = svc_services_div(x , y);
+            ^
+main.c(28): error: expected '(' after 'asm'
+ __asm void SVC_Handler()
+       ^
+main.c(28): error: expected ';' after top-level asm block
+ __asm void SVC_Handler()
+      ^
+      ;
+main.c(30): error: use of undeclared identifier 'TST'
+                TST LR, #4 //Ob 0100     reading Link register second bit to get to return code ie stack is MS/PS as TST performs AND operation
+                ^
+main.c(28): warning: no previous prototype for function 'SVC_Handler' [-Wmissing-prototypes]
+ __asm void SVC_Handler()
+            ^
+main.c(28): note: declare 'static' if the function is not intended to be used outside of this translation unit
+ __asm void SVC_Handler()
+       ^
+       static 
+main.c(28): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+ __asm void SVC_Handler()
+                       ^
+6 warnings and 15 errors generated.
+compiling main.c...
+".\Objects\Project_SVC_Exception.axf" - 15 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32F446RE
+  C:\Users\Amey\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Amey\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F446xx_OPT.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f446xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

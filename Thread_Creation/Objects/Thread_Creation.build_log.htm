@@ -1,0 +1,190 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Amey Juvatkar, XYZ, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.15
+Assembler:       Armasm.exe V6.15
+Linker/Locator:  ArmLink.exe V6.15
+Library Manager: ArmAr.exe V6.15
+Hex Converter:   FromElf.exe V6.15
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Amey\Documents\RTOS\Thread_Creation\Thread_Creation.uvprojx
+Project File Date:  01/26/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.15', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Cortex_M4'
+main.c(6): warning: unused parameter 'arguement' [-Wunused-parameter]
+void thread1(void const *arguement)
+                         ^
+main.c(6): warning: no previous prototype for function 'thread1' [-Wmissing-prototypes]
+void thread1(void const *arguement)
+     ^
+main.c(6): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void thread1(void const *arguement)
+^
+static 
+main.c(7): warning: function 'thread1' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(15): warning: unused parameter 'arguement' [-Wunused-parameter]
+void thread2(void const *arguement)
+                         ^
+main.c(15): warning: no previous prototype for function 'thread2' [-Wmissing-prototypes]
+void thread2(void const *arguement)
+     ^
+main.c(15): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void thread2(void const *arguement)
+^
+static 
+main.c(16): warning: function 'thread2' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(24): warning: unused parameter 'arguement' [-Wunused-parameter]
+void thread3(void const *arguement)
+                         ^
+main.c(24): warning: no previous prototype for function 'thread3' [-Wmissing-prototypes]
+void thread3(void const *arguement)
+     ^
+main.c(24): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void thread3(void const *arguement)
+^
+static 
+main.c(25): warning: function 'thread3' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(34): warning: no previous extern declaration for non-static variable 'os_thread_def_thread1' [-Wmissing-variable-declarations]
+osThreadDef(thread1,osPriorityNormal,1,0);     //it takes 4 arguements(threadname,ospriority,thread instance,stacksize)
+^
+C:/Users/Amey/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+                    ^
+<scratch space>(10): note: expanded from here
+os_thread_def_thread1
+^
+main.c(34): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Amey/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+      ^
+main.c(35): warning: no previous extern declaration for non-static variable 'os_thread_def_thread2' [-Wmissing-variable-declarations]
+osThreadDef(thread2,osPriorityNormal,1,0);                      //this defines a thread
+^
+C:/Users/Amey/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+                    ^
+<scratch space>(11): note: expanded from here
+os_thread_def_thread2
+^
+main.c(35): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Amey/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+      ^
+main.c(36): warning: no previous extern declaration for non-static variable 'os_thread_def_thread3' [-Wmissing-variable-declarations]
+osThreadDef(thread3,osPriorityNormal,1,0);
+^
+C:/Users/Amey/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+                    ^
+<scratch space>(12): note: expanded from here
+os_thread_def_thread3
+^
+main.c(36): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+C:/Users/Amey/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/RTOS/RTX/INC\cmsis_os.h(277): note: expanded from macro 'osThreadDef'
+const osThreadDef_t os_thread_def_##name = \
+      ^
+main.c(49): warning: no newline at end of file [-Wnewline-eof]
+        
+        ^
+main.c(4): warning: no previous extern declaration for non-static variable 'count1' [-Wmissing-variable-declarations]
+int32_t count1,count2,count3;
+        ^
+main.c(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int32_t count1,count2,count3;
+^
+main.c(4): warning: no previous extern declaration for non-static variable 'count2' [-Wmissing-variable-declarations]
+int32_t count1,count2,count3;
+               ^
+main.c(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int32_t count1,count2,count3;
+^
+main.c(4): warning: no previous extern declaration for non-static variable 'count3' [-Wmissing-variable-declarations]
+int32_t count1,count2,count3;
+                      ^
+main.c(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int32_t count1,count2,count3;
+^
+16 warnings generated.
+compiling main.c...
+compiling system_stm32f4xx.c...
+compiling RTX_Conf_CM.c...
+assembling startup_stm32f446xx.s...
+linking...
+Program Size: Code=6000 RO-data=616 RW-data=44 ZI-data=3976  
+".\Objects\Thread_Creation.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: RTOS Version: 1.0.0
+   * Component: CORE Version: 5.4.0
+   * Component: Keil RTX Version: 4.82.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Cortex_M4
+  C:\Users\Amey\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Amey\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC
+  C:\Users\Amey\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS:RTOS:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: ARM::CMSIS:RTOS:Keil RTX:4.82.0
+      Include file:  CMSIS\RTOS\RTX\UserCodeTemplates\osObjects.h
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\main.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Mutex.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MailQueue.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MsgQueue.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Timer.c
+      Library file:  CMSIS\RTOS\RTX\LIB\ARM\RTX_CM4.lib
+      Source file:   CMSIS\RTOS\RTX\Templates\RTX_Conf_CM.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Thread.c
+      Include file:  CMSIS\RTOS\RTX\INC\cmsis_os.h
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Semaphore.c
+      Source file:   CMSIS\RTOS\RTX\SRC\ARM\SVC_Table.s
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MemPool.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F446xx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f446xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
